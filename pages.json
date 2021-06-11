@@ -1,0 +1,118 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/found/found",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/friend/friend",
+			"style": {
+				"navigationBarTitleText": "好友",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}
+	    ,{
+            "path" : "pages/register/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/regSuccess/regSuccess",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#7bbfea",
+		"backgroundColor": "#7bbfea"
+	},
+	"tabBar": {
+		"list": [{
+			"pagePath": "pages/message/message",
+			"iconPath": "static/tabBar/xx.png",
+			"selectedIconPath": "static/tabBar/xx1.png",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/friend/friend",
+			"iconPath": "static/tabBar/hy.png",
+			"selectedIconPath": "static/tabBar/hy1.png",
+			"text": "好友"
+		}, {
+			"pagePath": "pages/found/found",
+			"iconPath": "static/tabBar/fx.png",
+			"selectedIconPath": "static/tabBar/fx1.png",
+			"text": "发现"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/tabBar/wd.png",
+			"selectedIconPath": "static/tabBar/wd1.png",
+			"text": "我的"
+		}]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"cl-(.*)": "cl-uni/components/cl-$1/cl-$1.vue"
+		}
+	}
+}
