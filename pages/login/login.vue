@@ -63,7 +63,6 @@
 							        });
 							    }
 							});
-							
 						}else if(res.data.state==201){
 							this.$refs["toast"].open({
 								type:"warning ",
