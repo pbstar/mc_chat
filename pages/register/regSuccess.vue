@@ -7,7 +7,7 @@
 		</view>
 		<text>注：ID是唯一登录凭证，请牢记！</text>
 		<view class="tlbox">
-			<cl-button type="error"@click="tologin">去登陆</cl-button>
+			<cl-button type="error" @click="tologin">去登陆</cl-button>
 		</view>
 	</view>
 </template>

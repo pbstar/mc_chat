@@ -8,7 +8,7 @@
 				<text>{{name}}</text>
 				<view class="idbox">
 					<text>ID:{{id}}</text>
-					<view class="">
+					<view class="" @click="toinfo()">
 						<svg t="1623635043655" class="icon" viewBox="0 0 1024 1024" version="1.1"
 							xmlns="http://www.w3.org/2000/svg" p-id="2508" width="20" height="20">
 							<path
@@ -91,6 +91,11 @@
 			toblog() {
 				this.$refs["toast"].open({
 					message: "开发中",
+				});
+			},
+			toinfo(){
+				uni.redirectTo({
+					url: '/pages/mine/mineinfo?id='+this.id
 				});
 			}
 		}

@@ -9,7 +9,7 @@
 			</view>
 			<view class="mm">
 				<text>密码：</text>
-				<input type="text" v-model="pass" placeholder="请输入密码"/>
+				<input type="password" v-model="pass" placeholder="请输入密码"/>
 			</view>
 			<navigator url="/pages/register/register">还没有帐号，去注册</navigator>
 			<button type="primary" @click="tologin()">登录</button>

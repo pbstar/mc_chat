@@ -21,15 +21,15 @@
 				uni.getStorage({
 					key: 'mc_chat_id',
 					success: function(res) {
-						if (res.data) {
-							uni.switchTab({
-								url: '/pages/message/message'
-							});
-						} else {
-							uni.redirectTo({
-								url: '/pages/login/login'
-							});
-						}
+						console.log(res)
+						uni.switchTab({
+							url: '/pages/message/message'
+						});
+					},
+					fail: function(err) {
+						uni.redirectTo({
+							url: '/pages/login/login'
+						});
 					}
 				})
 			}, 3000)
